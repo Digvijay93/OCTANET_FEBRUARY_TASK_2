@@ -3,24 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>To-Do-App</title>
+        <title>To-Do-List Website</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <div class="container">
+            <div class="nav-container">
+                <div class="img-container">
+                    <a href="#">
+                        <img src="./images/icon.png" alt="" />
+                    </a>
+                </div>
+                <div class="navmenu">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contacts</a>
+                </div>
+            </div>
             <div class="todo-app">
                 <h2>
-                    To Do App
+                    To-Do-List
                     <img src="./images/icon.png" alt="to-do-list-icon" />
                 </h2>
 
                 <div class="row">
-                    <input type="text" id="input-box" placeholder="Add Your Task">
+                    <input
+                        type="text"
+                        id="input-box"
+                        placeholder="Add Your Task"
+                    />
                     <button onclick="addTask()">Add</button>
                 </div>
 
-                <ul id="list-container">
-                </ul>
+                <ul id="list-container"></ul>
             </div>
         </div>
 
